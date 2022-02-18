@@ -1,0 +1,1025 @@
+2019-02-22 01:16:52.804022: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-02-22 01:16:53.030822: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-02-22 01:16:53.031698: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0e.0
+totalMemory: 22.38GiB freeMemory: 22.21GiB
+2019-02-22 01:16:53.031739: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+user_feat_size is 14, in 89.510000 seconds
+loading data in 111.740000 seconds
+train/valid/test size: 2326847/258539/438949
+poi_feat_size 	3
+dim 	64
+action_feat_size 	2
+cuda_devices 	4
+epsilon 	1e-06
+dropout 	0.4
+fnn_hidden 	16
+item_size 	295795
+batch_size 	128
+patience 	5
+warmup_steps 	4000
+reg_weight 	0.03
+user_feat_size 	14
+l2_weight 	1e-05
+max_steps 	100000
+dir 	../beijing/
+epoch 1    loss: 0.981469
+epoch 1    t_Prec: 0.184383  t_Recall: 0.496131  t_F1: 0.268850  t_AUC: 0.541420
+epoch 1    v_Prec: 0.192568  v_Recall: 0.486248  v_F1: 0.275880  v_AUC: 0.536535
+epoch 1    running time 360 seconds
+
+epoch 2    loss: 0.593670
+epoch 2    t_Prec: 0.215032  t_Recall: 0.480690  t_F1: 0.297141  t_AUC: 0.546682
+epoch 2    v_Prec: 0.226248  v_Recall: 0.489776  v_F1: 0.309517  v_AUC: 0.553492
+epoch 2    running time 613 seconds
+
+epoch 3    loss: 0.458820
+epoch 3    t_Prec: 0.245107  t_Recall: 0.477688  t_F1: 0.323978  t_AUC: 0.552833
+epoch 3    v_Prec: 0.249563  v_Recall: 0.468489  v_F1: 0.325652  v_AUC: 0.547510
+epoch 3    running time 869 seconds
+
+epoch 4    loss: 0.389197
+epoch 4    t_Prec: 0.257222  t_Recall: 0.467186  t_F1: 0.331776  t_AUC: 0.546130
+epoch 4    v_Prec: 0.256007  v_Recall: 0.459633  v_F1: 0.328851  v_AUC: 0.542460
+epoch 4    running time 1122 seconds
+
+epoch 5    loss: 0.346021
+epoch 5    t_Prec: 0.278445  t_Recall: 0.465741  t_F1: 0.348524  t_AUC: 0.549353
+epoch 5    v_Prec: 0.305556  v_Recall: 0.460447  v_F1: 0.367341  v_AUC: 0.558860
+epoch 5    running time 1374 seconds
+
+epoch 6    loss: 0.316882
+epoch 6    t_Prec: 0.295691  t_Recall: 0.464521  t_F1: 0.361359  t_AUC: 0.550947
+epoch 6    v_Prec: 0.308045  v_Recall: 0.464517  v_F1: 0.370435  v_AUC: 0.556225
+epoch 6    running time 1630 seconds
+
+epoch 7    loss: 0.295552
+epoch 7    t_Prec: 0.307645  t_Recall: 0.461670  t_F1: 0.369239  t_AUC: 0.548836
+epoch 7    v_Prec: 0.310329  v_Recall: 0.449101  v_F1: 0.367036  v_AUC: 0.543499
+epoch 7    running time 1887 seconds
+
+epoch 8    loss: 0.279295
+epoch 8    t_Prec: 0.315208  t_Recall: 0.458216  t_F1: 0.373491  t_AUC: 0.547080
+epoch 8    v_Prec: 0.328897  v_Recall: 0.445598  v_F1: 0.378455  v_AUC: 0.543544
+epoch 8    running time 2145 seconds
+
+epoch 9    loss: 0.266631
+epoch 9    t_Prec: 0.329119  t_Recall: 0.451441  t_F1: 0.380696  t_AUC: 0.543312
+epoch 9    v_Prec: 0.324185  v_Recall: 0.454503  v_F1: 0.378439  v_AUC: 0.547619
+epoch 9    running time 2402 seconds
+
+epoch 10    loss: 0.256217
+epoch 10    t_Prec: 0.343301  t_Recall: 0.451936  t_F1: 0.390198  t_AUC: 0.547363
+epoch 10    v_Prec: 0.325354  v_Recall: 0.454947  v_F1: 0.379389  v_AUC: 0.551696
+epoch 10    running time 2658 seconds
+
+epoch 11    loss: 0.247695
+epoch 11    t_Prec: 0.358959  t_Recall: 0.451622  t_F1: 0.399994  t_AUC: 0.549196
+epoch 11    v_Prec: 0.363935  v_Recall: 0.444908  v_F1: 0.400368  v_AUC: 0.550453
+epoch 11    running time 2916 seconds
+
+epoch 12    loss: 0.240695
+epoch 12    t_Prec: 0.364606  t_Recall: 0.450292  t_F1: 0.402944  t_AUC: 0.545283
+epoch 12    v_Prec: 0.346830  v_Recall: 0.448361  v_F1: 0.391114  v_AUC: 0.549139
+epoch 12    running time 3169 seconds
+
+epoch 13    loss: 0.234783
+epoch 13    t_Prec: 0.370766  t_Recall: 0.445955  t_F1: 0.404899  t_AUC: 0.544162
+epoch 13    v_Prec: 0.368220  v_Recall: 0.429318  v_F1: 0.396429  v_AUC: 0.537905
+epoch 13    running time 3420 seconds
+
+epoch 14    loss: 0.229551
+epoch 14    t_Prec: 0.373955  t_Recall: 0.443870  t_F1: 0.405924  t_AUC: 0.540282
+epoch 14    v_Prec: 0.347940  v_Recall: 0.445968  v_F1: 0.390902  v_AUC: 0.540962
+epoch 14    running time 3672 seconds
+
+epoch 15    loss: 0.224899
+epoch 15    t_Prec: 0.394886  t_Recall: 0.445889  t_F1: 0.418841  t_AUC: 0.545759
+epoch 15    v_Prec: 0.399185  v_Recall: 0.442046  v_F1: 0.419524  v_AUC: 0.553372
+epoch 15    running time 3923 seconds
+
+epoch 16    loss: 0.220955
+epoch 16    t_Prec: 0.404421  t_Recall: 0.444557  t_F1: 0.423540  t_AUC: 0.548395
+epoch 16    v_Prec: 0.405195  v_Recall: 0.431341  v_F1: 0.417859  v_AUC: 0.544662
+epoch 16    running time 4175 seconds
+
+epoch 17    loss: 0.217407
+epoch 17    t_Prec: 0.410513  t_Recall: 0.444554  t_F1: 0.426856  t_AUC: 0.547831
+epoch 17    v_Prec: 0.404869  v_Recall: 0.442589  v_F1: 0.422890  v_AUC: 0.550679
+epoch 17    running time 4427 seconds
+
+epoch 18    loss: 0.214220
+epoch 18    t_Prec: 0.416721  t_Recall: 0.445304  t_F1: 0.430539  t_AUC: 0.546860
+epoch 18    v_Prec: 0.395089  v_Recall: 0.449644  v_F1: 0.420605  v_AUC: 0.552719
+epoch 18    running time 4679 seconds
+
+epoch 19    loss: 0.211345
+epoch 19    t_Prec: 0.424194  t_Recall: 0.448160  t_F1: 0.435848  t_AUC: 0.548330
+epoch 19    v_Prec: 0.424952  v_Recall: 0.435214  v_F1: 0.430022  v_AUC: 0.549606
+epoch 19    running time 4931 seconds
+
+epoch 20    loss: 0.208821
+epoch 20    t_Prec: 0.430040  t_Recall: 0.447277  t_F1: 0.438489  t_AUC: 0.547868
+epoch 20    v_Prec: 0.414528  v_Recall: 0.451716  v_F1: 0.432323  v_AUC: 0.554621
+epoch 20    running time 5182 seconds
+
+epoch 21    loss: 0.206471
+epoch 21    t_Prec: 0.446643  t_Recall: 0.450795  t_F1: 0.448709  t_AUC: 0.553935
+epoch 21    v_Prec: 0.448288  v_Recall: 0.439530  v_F1: 0.443866  v_AUC: 0.552153
+epoch 21    running time 5435 seconds
+
+epoch 22    loss: 0.204379
+epoch 22    t_Prec: 0.447655  t_Recall: 0.446858  t_F1: 0.447256  t_AUC: 0.547880
+epoch 22    v_Prec: 0.428778  v_Recall: 0.438593  v_F1: 0.433630  v_AUC: 0.546205
+epoch 22    running time 5687 seconds
+
+epoch 23    loss: 0.202416
+epoch 23    t_Prec: 0.453699  t_Recall: 0.443979  t_F1: 0.448786  t_AUC: 0.548088
+epoch 23    v_Prec: 0.449203  v_Recall: 0.429713  v_F1: 0.439242  v_AUC: 0.544550
+epoch 23    running time 5940 seconds
+
+epoch 24    loss: 0.200578
+epoch 24    t_Prec: 0.458456  t_Recall: 0.445265  t_F1: 0.451765  t_AUC: 0.549863
+epoch 24    v_Prec: 0.432700  v_Recall: 0.440566  v_F1: 0.436598  v_AUC: 0.551789
+epoch 24    running time 6190 seconds
+
+epoch 25    loss: 0.198916
+epoch 25    t_Prec: 0.460046  t_Recall: 0.444964  t_F1: 0.452380  t_AUC: 0.547520
+epoch 25    v_Prec: 0.446050  v_Recall: 0.438470  v_F1: 0.442228  v_AUC: 0.549346
+epoch 25    running time 6443 seconds
+
+epoch 26    loss: 0.197394
+epoch 26    t_Prec: 0.461827  t_Recall: 0.444926  t_F1: 0.453219  t_AUC: 0.547533
+epoch 26    v_Prec: 0.443106  v_Recall: 0.447226  v_F1: 0.445156  v_AUC: 0.555899
+epoch 26    running time 6695 seconds
+
+epoch 27    loss: 0.195984
+epoch 27    t_Prec: 0.466638  t_Recall: 0.444023  t_F1: 0.455050  t_AUC: 0.547044
+epoch 27    v_Prec: 0.444062  v_Recall: 0.438914  v_F1: 0.441473  v_AUC: 0.548161
+epoch 27    running time 6945 seconds
+
+epoch 28    loss: 0.194549
+epoch 28    t_Prec: 0.470638  t_Recall: 0.443681  t_F1: 0.456762  t_AUC: 0.546709
+epoch 28    v_Prec: 0.460194  v_Recall: 0.431168  v_F1: 0.445209  v_AUC: 0.546128
+epoch 28    running time 7196 seconds
+
+epoch 29    loss: 0.193453
+epoch 29    t_Prec: 0.465573  t_Recall: 0.441125  t_F1: 0.453019  t_AUC: 0.545220
+epoch 29    v_Prec: 0.465685  v_Recall: 0.425964  v_F1: 0.444940  v_AUC: 0.540931
+epoch 29    running time 7447 seconds
+
+epoch 30    loss: 0.192188
+epoch 30    t_Prec: 0.477135  t_Recall: 0.442288  t_F1: 0.459051  t_AUC: 0.545590
+epoch 30    v_Prec: 0.464778  v_Recall: 0.432254  v_F1: 0.447926  v_AUC: 0.546730
+epoch 30    running time 7697 seconds
+
+epoch 31    loss: 0.191053
+epoch 31    t_Prec: 0.487023  t_Recall: 0.444420  t_F1: 0.464747  t_AUC: 0.548887
+epoch 31    v_Prec: 0.468337  v_Recall: 0.437458  v_F1: 0.452372  v_AUC: 0.550334
+epoch 31    running time 7946 seconds
+
+epoch 32    loss: 0.189919
+epoch 32    t_Prec: 0.490941  t_Recall: 0.446259  t_F1: 0.467534  t_AUC: 0.550136
+epoch 32    v_Prec: 0.467573  v_Recall: 0.431785  v_F1: 0.448967  v_AUC: 0.546322
+epoch 32    running time 8197 seconds
+
+epoch 33    loss: 0.189067
+epoch 33    t_Prec: 0.494152  t_Recall: 0.443454  t_F1: 0.467432  t_AUC: 0.548580
+epoch 33    v_Prec: 0.475241  v_Recall: 0.434868  v_F1: 0.454159  v_AUC: 0.551237
+epoch 33    running time 8450 seconds
+
+epoch 34    loss: 0.188068
+epoch 34    t_Prec: 0.500519  t_Recall: 0.443500  t_F1: 0.470288  t_AUC: 0.550507
+epoch 34    v_Prec: 0.476536  v_Recall: 0.440344  v_F1: 0.457726  v_AUC: 0.556640
+epoch 34    running time 8701 seconds
+
+epoch 35    loss: 0.187283
+epoch 35    t_Prec: 0.501714  t_Recall: 0.443697  t_F1: 0.470926  t_AUC: 0.551818
+epoch 35    v_Prec: 0.490242  v_Recall: 0.420735  v_F1: 0.452837  v_AUC: 0.548754
+epoch 35    running time 8949 seconds
+
+epoch 36    loss: 0.186499
+epoch 36    t_Prec: 0.499934  t_Recall: 0.443208  t_F1: 0.469865  t_AUC: 0.548612
+epoch 36    v_Prec: 0.470609  v_Recall: 0.434449  v_F1: 0.451807  v_AUC: 0.547962
+epoch 36    running time 9196 seconds
+
+epoch 37    loss: 0.185646
+epoch 37    t_Prec: 0.503724  t_Recall: 0.442140  t_F1: 0.470927  t_AUC: 0.548404
+epoch 37    v_Prec: 0.484037  v_Recall: 0.433438  v_F1: 0.457342  v_AUC: 0.555318
+epoch 37    running time 9445 seconds
+
+epoch 38    loss: 0.184873
+epoch 38    t_Prec: 0.502103  t_Recall: 0.442050  t_F1: 0.470167  t_AUC: 0.546069
+epoch 38    v_Prec: 0.472766  v_Recall: 0.432476  v_F1: 0.451724  v_AUC: 0.542953
+epoch 38    running time 9693 seconds
+
+epoch 39    loss: 0.184250
+epoch 39    t_Prec: 0.506201  t_Recall: 0.442034  t_F1: 0.471946  t_AUC: 0.545123
+epoch 39    v_Prec: 0.474766  v_Recall: 0.436003  v_F1: 0.454559  v_AUC: 0.547890
+epoch 39    running time 9937 seconds
+
+Early stop model F1: 0.457726
+testing Prec: 0.18831454511172946
+testing Recall: 0.47821418725787496
+testing F1: 0.27021997032081396
+testing AUC: 0.5337471830690242
+overall running time 9942 seconds
+2019-02-22 04:02:37.123969: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-02-22 04:02:37.839721: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-02-22 04:02:37.842273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0e.0
+totalMemory: 22.38GiB freeMemory: 22.21GiB
+2019-02-22 04:02:37.842315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+user_feat_size is 14, in 89.740000 seconds
+loading data in 111.900000 seconds
+train/valid/test size: 2326847/258539/438949
+poi_feat_size 	3
+dim 	64
+action_feat_size 	2
+cuda_devices 	4
+epsilon 	1e-06
+dropout 	0.4
+fnn_hidden 	16
+item_size 	295795
+batch_size 	128
+patience 	5
+warmup_steps 	4000
+reg_weight 	0.03
+user_feat_size 	14
+l2_weight 	1e-05
+max_steps 	100000
+dir 	../beijing/
+epoch 1    loss: 0.981353
+epoch 1    t_Prec: 0.185945  t_Recall: 0.496849  t_F1: 0.270613  t_AUC: 0.542903
+epoch 1    v_Prec: 0.192752  v_Recall: 0.497410  v_F1: 0.277838  v_AUC: 0.543144
+epoch 1    running time 356 seconds
+
+epoch 2    loss: 0.593021
+epoch 2    t_Prec: 0.212074  t_Recall: 0.488700  t_F1: 0.295789  t_AUC: 0.549533
+epoch 2    v_Prec: 0.217469  v_Recall: 0.483155  v_F1: 0.299936  v_AUC: 0.548480
+epoch 2    running time 606 seconds
+
+epoch 3    loss: 0.458628
+epoch 3    t_Prec: 0.238950  t_Recall: 0.484125  t_F1: 0.319971  t_AUC: 0.555534
+epoch 3    v_Prec: 0.242772  v_Recall: 0.485202  v_F1: 0.323620  v_AUC: 0.556665
+epoch 3    running time 856 seconds
+
+epoch 4    loss: 0.388863
+epoch 4    t_Prec: 0.260934  t_Recall: 0.480475  t_F1: 0.338200  t_AUC: 0.557395
+epoch 4    v_Prec: 0.275912  v_Recall: 0.473240  v_F1: 0.348588  v_AUC: 0.561042
+epoch 4    running time 1107 seconds
+
+epoch 5    loss: 0.345811
+epoch 5    t_Prec: 0.283287  t_Recall: 0.481509  t_F1: 0.356710  t_AUC: 0.563126
+epoch 5    v_Prec: 0.273510  v_Recall: 0.478888  v_F1: 0.348168  v_AUC: 0.561405
+epoch 5    running time 1359 seconds
+
+epoch 6    loss: 0.316542
+epoch 6    t_Prec: 0.298450  t_Recall: 0.477396  t_F1: 0.367286  t_AUC: 0.562278
+epoch 6    v_Prec: 0.309193  v_Recall: 0.469935  v_F1: 0.372983  v_AUC: 0.562129
+epoch 6    running time 1610 seconds
+
+epoch 7    loss: 0.295293
+epoch 7    t_Prec: 0.309746  t_Recall: 0.474778  t_F1: 0.374904  t_AUC: 0.560278
+epoch 7    v_Prec: 0.309560  v_Recall: 0.464707  v_F1: 0.371589  v_AUC: 0.556225
+epoch 7    running time 1854 seconds
+
+epoch 8    loss: 0.279201
+epoch 8    t_Prec: 0.320651  t_Recall: 0.472394  t_F1: 0.382005  t_AUC: 0.559240
+epoch 8    v_Prec: 0.317929  v_Recall: 0.463202  v_F1: 0.377057  v_AUC: 0.555528
+epoch 8    running time 2099 seconds
+
+epoch 9    loss: 0.266232
+epoch 9    t_Prec: 0.330505  t_Recall: 0.468043  t_F1: 0.387429  t_AUC: 0.555451
+epoch 9    v_Prec: 0.329945  v_Recall: 0.451561  v_F1: 0.381291  v_AUC: 0.547427
+epoch 9    running time 2346 seconds
+
+epoch 10    loss: 0.256084
+epoch 10    t_Prec: 0.334511  t_Recall: 0.467751  t_F1: 0.390066  t_AUC: 0.553042
+epoch 10    v_Prec: 0.333685  v_Recall: 0.459799  v_F1: 0.386720  v_AUC: 0.552033
+epoch 10    running time 2587 seconds
+
+epoch 11    loss: 0.247739
+epoch 11    t_Prec: 0.353723  t_Recall: 0.467671  t_F1: 0.402793  t_AUC: 0.557370
+epoch 11    v_Prec: 0.349492  v_Recall: 0.457160  v_F1: 0.396140  v_AUC: 0.554709
+epoch 11    running time 2832 seconds
+
+epoch 12    loss: 0.240580
+epoch 12    t_Prec: 0.360146  t_Recall: 0.465945  t_F1: 0.406271  t_AUC: 0.556594
+epoch 12    v_Prec: 0.364668  v_Recall: 0.444803  v_F1: 0.400769  v_AUC: 0.547680
+epoch 12    running time 3074 seconds
+
+epoch 13    loss: 0.234634
+epoch 13    t_Prec: 0.367780  t_Recall: 0.463572  t_F1: 0.410157  t_AUC: 0.555418
+epoch 13    v_Prec: 0.358422  v_Recall: 0.450057  v_F1: 0.399047  v_AUC: 0.548757
+epoch 13    running time 3315 seconds
+
+epoch 14    loss: 0.229351
+epoch 14    t_Prec: 0.375460  t_Recall: 0.463862  t_F1: 0.415006  t_AUC: 0.553968
+epoch 14    v_Prec: 0.365375  v_Recall: 0.454102  v_F1: 0.404935  v_AUC: 0.551787
+epoch 14    running time 3556 seconds
+
+epoch 15    loss: 0.224683
+epoch 15    t_Prec: 0.389736  t_Recall: 0.462486  t_F1: 0.423006  t_AUC: 0.556731
+epoch 15    v_Prec: 0.355865  v_Recall: 0.457826  v_F1: 0.400457  v_AUC: 0.551170
+epoch 15    running time 3798 seconds
+
+epoch 16    loss: 0.220783
+epoch 16    t_Prec: 0.393606  t_Recall: 0.463340  t_F1: 0.425636  t_AUC: 0.554773
+epoch 16    v_Prec: 0.387485  v_Recall: 0.456025  v_F1: 0.418970  v_AUC: 0.553721
+epoch 16    running time 4040 seconds
+
+epoch 17    loss: 0.217141
+epoch 17    t_Prec: 0.403164  t_Recall: 0.465780  t_F1: 0.432216  t_AUC: 0.556757
+epoch 17    v_Prec: 0.396278  v_Recall: 0.446924  v_F1: 0.420080  v_AUC: 0.548013
+epoch 17    running time 4280 seconds
+
+epoch 18    loss: 0.214042
+epoch 18    t_Prec: 0.404041  t_Recall: 0.461230  t_F1: 0.430745  t_AUC: 0.555453
+epoch 18    v_Prec: 0.382200  v_Recall: 0.450032  v_F1: 0.413352  v_AUC: 0.550575
+epoch 18    running time 4520 seconds
+
+epoch 19    loss: 0.211067
+epoch 19    t_Prec: 0.410747  t_Recall: 0.462127  t_F1: 0.434925  t_AUC: 0.557066
+epoch 19    v_Prec: 0.384129  v_Recall: 0.456642  v_F1: 0.417258  v_AUC: 0.552298
+epoch 19    running time 4760 seconds
+
+epoch 20    loss: 0.208644
+epoch 20    t_Prec: 0.421795  t_Recall: 0.461112  t_F1: 0.440578  t_AUC: 0.558866
+epoch 20    v_Prec: 0.407833  v_Recall: 0.447886  v_F1: 0.426922  v_AUC: 0.552504
+epoch 20    running time 4999 seconds
+
+epoch 21    loss: 0.206241
+epoch 21    t_Prec: 0.424719  t_Recall: 0.466002  t_F1: 0.444404  t_AUC: 0.561388
+epoch 21    v_Prec: 0.399407  v_Recall: 0.458097  v_F1: 0.426743  v_AUC: 0.556844
+epoch 21    running time 5240 seconds
+
+epoch 22    loss: 0.204204
+epoch 22    t_Prec: 0.430539  t_Recall: 0.465077  t_F1: 0.447142  t_AUC: 0.560732
+epoch 22    v_Prec: 0.435537  v_Recall: 0.447664  v_F1: 0.441517  v_AUC: 0.560836
+epoch 22    running time 5495 seconds
+
+epoch 23    loss: 0.202221
+epoch 23    t_Prec: 0.430816  t_Recall: 0.466809  t_F1: 0.448091  t_AUC: 0.558987
+epoch 23    v_Prec: 0.425497  v_Recall: 0.455458  v_F1: 0.439968  v_AUC: 0.558275
+epoch 23    running time 5755 seconds
+
+epoch 24    loss: 0.200305
+epoch 24    t_Prec: 0.442176  t_Recall: 0.465882  t_F1: 0.453720  t_AUC: 0.558680
+epoch 24    v_Prec: 0.429884  v_Recall: 0.447738  v_F1: 0.438630  v_AUC: 0.553436
+epoch 24    running time 6023 seconds
+
+epoch 25    loss: 0.198722
+epoch 25    t_Prec: 0.437786  t_Recall: 0.465830  t_F1: 0.451373  t_AUC: 0.558420
+epoch 25    v_Prec: 0.399966  v_Recall: 0.459626  v_F1: 0.427725  v_AUC: 0.553262
+epoch 25    running time 6302 seconds
+
+epoch 26    loss: 0.197226
+epoch 26    t_Prec: 0.455153  t_Recall: 0.467945  t_F1: 0.461460  t_AUC: 0.563382
+epoch 26    v_Prec: 0.451278  v_Recall: 0.457332  v_F1: 0.454285  v_AUC: 0.565742
+epoch 26    running time 6542 seconds
+
+epoch 27    loss: 0.195727
+epoch 27    t_Prec: 0.452474  t_Recall: 0.464659  t_F1: 0.458485  t_AUC: 0.562811
+epoch 27    v_Prec: 0.440206  v_Recall: 0.444581  v_F1: 0.442383  v_AUC: 0.556183
+epoch 27    running time 6782 seconds
+
+epoch 28    loss: 0.194420
+epoch 28    t_Prec: 0.457271  t_Recall: 0.462371  t_F1: 0.459807  t_AUC: 0.561557
+epoch 28    v_Prec: 0.440598  v_Recall: 0.455137  v_F1: 0.447750  v_AUC: 0.561187
+epoch 28    running time 7021 seconds
+
+epoch 29    loss: 0.193170
+epoch 29    t_Prec: 0.463260  t_Recall: 0.462672  t_F1: 0.462966  t_AUC: 0.560596
+epoch 29    v_Prec: 0.448652  v_Recall: 0.446826  v_F1: 0.447737  v_AUC: 0.555734
+epoch 29    running time 7262 seconds
+
+epoch 30    loss: 0.191962
+epoch 30    t_Prec: 0.458960  t_Recall: 0.461208  t_F1: 0.460081  t_AUC: 0.557941
+epoch 30    v_Prec: 0.462614  v_Recall: 0.441597  v_F1: 0.451861  v_AUC: 0.553750
+epoch 30    running time 7502 seconds
+
+epoch 31    loss: 0.190903
+epoch 31    t_Prec: 0.461883  t_Recall: 0.458849  t_F1: 0.460361  t_AUC: 0.555674
+epoch 31    v_Prec: 0.450872  v_Recall: 0.441942  v_F1: 0.446363  v_AUC: 0.553484
+epoch 31    running time 7742 seconds
+
+Early stop model F1: 0.454285
+testing Prec: 0.19142361426109045
+testing Recall: 0.48985069862596303
+testing F1: 0.27527528751798896
+testing AUC: 0.5421483728364234
+overall running time 7745 seconds
+2019-02-22 06:11:45.174099: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-02-22 06:11:46.355662: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-02-22 06:11:46.358282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0e.0
+totalMemory: 22.38GiB freeMemory: 22.21GiB
+2019-02-22 06:11:46.358322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+user_feat_size is 14, in 90.450000 seconds
+loading data in 112.650000 seconds
+train/valid/test size: 2326847/258539/438949
+poi_feat_size 	3
+dim 	64
+action_feat_size 	2
+cuda_devices 	4
+epsilon 	1e-06
+dropout 	0.4
+fnn_hidden 	16
+item_size 	295795
+batch_size 	128
+patience 	5
+warmup_steps 	4000
+reg_weight 	0.03
+user_feat_size 	14
+l2_weight 	1e-05
+max_steps 	100000
+dir 	../beijing/
+epoch 1    loss: 0.981297
+epoch 1    t_Prec: 0.184474  t_Recall: 0.497669  t_F1: 0.269173  t_AUC: 0.542174
+epoch 1    v_Prec: 0.188720  v_Recall: 0.489283  v_F1: 0.272380  v_AUC: 0.536748
+epoch 1    running time 347 seconds
+
+epoch 2    loss: 0.593003
+epoch 2    t_Prec: 0.218498  t_Recall: 0.483682  t_F1: 0.301016  t_AUC: 0.551611
+epoch 2    v_Prec: 0.237580  v_Recall: 0.475428  v_F1: 0.316833  v_AUC: 0.554566
+epoch 2    running time 590 seconds
+
+epoch 3    loss: 0.458373
+epoch 3    t_Prec: 0.246782  t_Recall: 0.476834  t_F1: 0.325239  t_AUC: 0.556772
+epoch 3    v_Prec: 0.259325  v_Recall: 0.457943  v_F1: 0.331135  v_AUC: 0.549007
+epoch 3    running time 835 seconds
+
+epoch 4    loss: 0.388791
+epoch 4    t_Prec: 0.266660  t_Recall: 0.470854  t_F1: 0.340490  t_AUC: 0.554252
+epoch 4    v_Prec: 0.280078  v_Recall: 0.461156  v_F1: 0.348499  v_AUC: 0.554581
+epoch 4    running time 1081 seconds
+
+epoch 5    loss: 0.345787
+epoch 5    t_Prec: 0.282121  t_Recall: 0.468683  t_F1: 0.352223  t_AUC: 0.555541
+epoch 5    v_Prec: 0.276622  v_Recall: 0.477390  v_F1: 0.350277  v_AUC: 0.560756
+epoch 5    running time 1326 seconds
+
+epoch 6    loss: 0.316266
+epoch 6    t_Prec: 0.303180  t_Recall: 0.469447  t_F1: 0.368423  t_AUC: 0.557927
+epoch 6    v_Prec: 0.304818  v_Recall: 0.449483  v_F1: 0.363278  v_AUC: 0.547690
+epoch 6    running time 1571 seconds
+
+epoch 7    loss: 0.295266
+epoch 7    t_Prec: 0.316882  t_Recall: 0.463262  t_F1: 0.376339  t_AUC: 0.557436
+epoch 7    v_Prec: 0.310214  v_Recall: 0.452008  v_F1: 0.367923  v_AUC: 0.549049
+epoch 7    running time 1816 seconds
+
+epoch 8    loss: 0.278883
+epoch 8    t_Prec: 0.332134  t_Recall: 0.462290  t_F1: 0.386550  t_AUC: 0.557710
+epoch 8    v_Prec: 0.323113  v_Recall: 0.454068  v_F1: 0.377558  v_AUC: 0.553629
+epoch 8    running time 2059 seconds
+
+epoch 9    loss: 0.266138
+epoch 9    t_Prec: 0.348124  t_Recall: 0.463472  t_F1: 0.397601  t_AUC: 0.560880
+epoch 9    v_Prec: 0.341873  v_Recall: 0.466649  v_F1: 0.394633  v_AUC: 0.567659
+epoch 9    running time 2301 seconds
+
+epoch 10    loss: 0.255926
+epoch 10    t_Prec: 0.363225  t_Recall: 0.458390  t_F1: 0.405297  t_AUC: 0.560957
+epoch 10    v_Prec: 0.375887  v_Recall: 0.438006  v_F1: 0.404576  v_AUC: 0.553939
+epoch 10    running time 2546 seconds
+
+epoch 11    loss: 0.247573
+epoch 11    t_Prec: 0.377948  t_Recall: 0.463585  t_F1: 0.416409  t_AUC: 0.562924
+epoch 11    v_Prec: 0.373224  v_Recall: 0.453602  v_F1: 0.409507  v_AUC: 0.562930
+epoch 11    running time 2790 seconds
+
+epoch 12    loss: 0.240478
+epoch 12    t_Prec: 0.384605  t_Recall: 0.466558  t_F1: 0.421636  t_AUC: 0.566114
+epoch 12    v_Prec: 0.376327  v_Recall: 0.457428  v_F1: 0.412933  v_AUC: 0.564304
+epoch 12    running time 3033 seconds
+
+epoch 13    loss: 0.234444
+epoch 13    t_Prec: 0.392354  t_Recall: 0.462413  t_F1: 0.424512  t_AUC: 0.563365
+epoch 13    v_Prec: 0.376802  v_Recall: 0.460297  v_F1: 0.414385  v_AUC: 0.563288
+epoch 13    running time 3275 seconds
+
+epoch 14    loss: 0.229116
+epoch 14    t_Prec: 0.404393  t_Recall: 0.468842  t_F1: 0.434239  t_AUC: 0.568022
+epoch 14    v_Prec: 0.400981  v_Recall: 0.449066  v_F1: 0.423663  v_AUC: 0.564221
+epoch 14    running time 3521 seconds
+
+epoch 15    loss: 0.224576
+epoch 15    t_Prec: 0.405416  t_Recall: 0.464762  t_F1: 0.433065  t_AUC: 0.567084
+epoch 15    v_Prec: 0.408479  v_Recall: 0.451052  v_F1: 0.428711  v_AUC: 0.565728
+epoch 15    running time 3765 seconds
+
+epoch 16    loss: 0.220595
+epoch 16    t_Prec: 0.418439  t_Recall: 0.466424  t_F1: 0.441130  t_AUC: 0.569936
+epoch 16    v_Prec: 0.397844  v_Recall: 0.465202  v_F1: 0.428894  v_AUC: 0.571154
+epoch 16    running time 4006 seconds
+
+epoch 17    loss: 0.217110
+epoch 17    t_Prec: 0.427248  t_Recall: 0.463763  t_F1: 0.444757  t_AUC: 0.567342
+epoch 17    v_Prec: 0.433043  v_Recall: 0.443450  v_F1: 0.438185  v_AUC: 0.564024
+epoch 17    running time 4248 seconds
+
+epoch 18    loss: 0.213956
+epoch 18    t_Prec: 0.430648  t_Recall: 0.462314  t_F1: 0.445920  t_AUC: 0.566155
+epoch 18    v_Prec: 0.403954  v_Recall: 0.452940  v_F1: 0.427047  v_AUC: 0.557557
+epoch 18    running time 4489 seconds
+
+epoch 19    loss: 0.211175
+epoch 19    t_Prec: 0.434716  t_Recall: 0.462996  t_F1: 0.448410  t_AUC: 0.565809
+epoch 19    v_Prec: 0.426207  v_Recall: 0.451469  v_F1: 0.438474  v_AUC: 0.563157
+epoch 19    running time 4730 seconds
+
+epoch 20    loss: 0.208470
+epoch 20    t_Prec: 0.433739  t_Recall: 0.463231  t_F1: 0.448001  t_AUC: 0.565637
+epoch 20    v_Prec: 0.419987  v_Recall: 0.456962  v_F1: 0.437695  v_AUC: 0.568323
+epoch 20    running time 4975 seconds
+
+epoch 21    loss: 0.206094
+epoch 21    t_Prec: 0.440289  t_Recall: 0.464554  t_F1: 0.452096  t_AUC: 0.565307
+epoch 21    v_Prec: 0.437428  v_Recall: 0.447275  v_F1: 0.442297  v_AUC: 0.563241
+epoch 21    running time 5220 seconds
+
+epoch 22    loss: 0.203946
+epoch 22    t_Prec: 0.449605  t_Recall: 0.465942  t_F1: 0.457628  t_AUC: 0.568067
+epoch 22    v_Prec: 0.436090  v_Recall: 0.451886  v_F1: 0.443848  v_AUC: 0.564173
+epoch 22    running time 5461 seconds
+
+epoch 23    loss: 0.201973
+epoch 23    t_Prec: 0.453907  t_Recall: 0.466213  t_F1: 0.459978  t_AUC: 0.567914
+epoch 23    v_Prec: 0.451386  v_Recall: 0.446859  v_F1: 0.449111  v_AUC: 0.562713
+epoch 23    running time 5701 seconds
+
+epoch 24    loss: 0.200281
+epoch 24    t_Prec: 0.460894  t_Recall: 0.463519  t_F1: 0.462203  t_AUC: 0.568953
+epoch 24    v_Prec: 0.436514  v_Recall: 0.453995  v_F1: 0.445083  v_AUC: 0.564972
+epoch 24    running time 5945 seconds
+
+epoch 25    loss: 0.198605
+epoch 25    t_Prec: 0.465401  t_Recall: 0.464433  t_F1: 0.464917  t_AUC: 0.566855
+epoch 25    v_Prec: 0.461570  v_Recall: 0.444014  v_F1: 0.452622  v_AUC: 0.565811
+epoch 25    running time 6188 seconds
+
+epoch 26    loss: 0.197093
+epoch 26    t_Prec: 0.467079  t_Recall: 0.470564  t_F1: 0.468815  t_AUC: 0.569279
+epoch 26    v_Prec: 0.422459  v_Recall: 0.463681  v_F1: 0.442111  v_AUC: 0.563434
+epoch 26    running time 6429 seconds
+
+epoch 27    loss: 0.195547
+epoch 27    t_Prec: 0.468122  t_Recall: 0.467467  t_F1: 0.467795  t_AUC: 0.567636
+epoch 27    v_Prec: 0.436096  v_Recall: 0.457869  v_F1: 0.446717  v_AUC: 0.568569
+epoch 27    running time 6667 seconds
+
+epoch 28    loss: 0.194314
+epoch 28    t_Prec: 0.472811  t_Recall: 0.466465  t_F1: 0.469617  t_AUC: 0.566156
+epoch 28    v_Prec: 0.454732  v_Recall: 0.457453  v_F1: 0.456088  v_AUC: 0.563457
+epoch 28    running time 6908 seconds
+
+epoch 29    loss: 0.193051
+epoch 29    t_Prec: 0.476967  t_Recall: 0.463188  t_F1: 0.469976  t_AUC: 0.563764
+epoch 29    v_Prec: 0.459291  v_Recall: 0.444897  v_F1: 0.451979  v_AUC: 0.559877
+epoch 29    running time 7148 seconds
+
+epoch 30    loss: 0.191823
+epoch 30    t_Prec: 0.481205  t_Recall: 0.467653  t_F1: 0.474332  t_AUC: 0.566658
+epoch 30    v_Prec: 0.474291  v_Recall: 0.458286  v_F1: 0.466151  v_AUC: 0.574049
+epoch 30    running time 7389 seconds
+
+epoch 31    loss: 0.190762
+epoch 31    t_Prec: 0.481740  t_Recall: 0.467185  t_F1: 0.474351  t_AUC: 0.568001
+epoch 31    v_Prec: 0.459225  v_Recall: 0.448256  v_F1: 0.453675  v_AUC: 0.560649
+epoch 31    running time 7630 seconds
+
+epoch 32    loss: 0.189718
+epoch 32    t_Prec: 0.482558  t_Recall: 0.467399  t_F1: 0.474857  t_AUC: 0.566571
+epoch 32    v_Prec: 0.481835  v_Recall: 0.454044  v_F1: 0.467527  v_AUC: 0.567825
+epoch 32    running time 7869 seconds
+
+epoch 33    loss: 0.188837
+epoch 33    t_Prec: 0.489367  t_Recall: 0.470025  t_F1: 0.479501  t_AUC: 0.568643
+epoch 33    v_Prec: 0.461866  v_Recall: 0.460812  v_F1: 0.461338  v_AUC: 0.569515
+epoch 33    running time 8111 seconds
+
+epoch 34    loss: 0.187876
+epoch 34    t_Prec: 0.492565  t_Recall: 0.470088  t_F1: 0.481064  t_AUC: 0.570603
+epoch 34    v_Prec: 0.481644  v_Recall: 0.456864  v_F1: 0.468927  v_AUC: 0.571971
+epoch 34    running time 8350 seconds
+
+epoch 35    loss: 0.187054
+epoch 35    t_Prec: 0.496062  t_Recall: 0.469025  t_F1: 0.482165  t_AUC: 0.568602
+epoch 35    v_Prec: 0.482290  v_Recall: 0.457134  v_F1: 0.469375  v_AUC: 0.571953
+epoch 35    running time 8592 seconds
+
+epoch 36    loss: 0.186161
+epoch 36    t_Prec: 0.492907  t_Recall: 0.469335  t_F1: 0.480832  t_AUC: 0.569636
+epoch 36    v_Prec: 0.456852  v_Recall: 0.464515  v_F1: 0.460652  v_AUC: 0.567374
+epoch 36    running time 8833 seconds
+
+epoch 37    loss: 0.185435
+epoch 37    t_Prec: 0.491826  t_Recall: 0.472445  t_F1: 0.481941  t_AUC: 0.570225
+epoch 37    v_Prec: 0.482071  v_Recall: 0.462553  v_F1: 0.472111  v_AUC: 0.571821
+epoch 37    running time 9072 seconds
+
+epoch 38    loss: 0.184649
+epoch 38    t_Prec: 0.496755  t_Recall: 0.469932  t_F1: 0.482971  t_AUC: 0.568314
+epoch 38    v_Prec: 0.478921  v_Recall: 0.456324  v_F1: 0.467350  v_AUC: 0.568355
+epoch 38    running time 9314 seconds
+
+epoch 39    loss: 0.183978
+epoch 39    t_Prec: 0.494953  t_Recall: 0.469770  t_F1: 0.482033  t_AUC: 0.568684
+epoch 39    v_Prec: 0.476449  v_Recall: 0.460395  v_F1: 0.468285  v_AUC: 0.570562
+epoch 39    running time 9555 seconds
+
+epoch 40    loss: 0.183264
+epoch 40    t_Prec: 0.496198  t_Recall: 0.472223  t_F1: 0.483914  t_AUC: 0.569702
+epoch 40    v_Prec: 0.461559  v_Recall: 0.458017  v_F1: 0.459781  v_AUC: 0.563792
+epoch 40    running time 9795 seconds
+
+epoch 41    loss: 0.182667
+epoch 41    t_Prec: 0.498419  t_Recall: 0.470739  t_F1: 0.484184  t_AUC: 0.568089
+epoch 41    v_Prec: 0.490746  v_Recall: 0.451248  v_F1: 0.470169  v_AUC: 0.567845
+epoch 41    running time 10035 seconds
+
+epoch 42    loss: 0.181995
+epoch 42    t_Prec: 0.497030  t_Recall: 0.470304  t_F1: 0.483298  t_AUC: 0.566185
+epoch 42    v_Prec: 0.487746  v_Recall: 0.453897  v_F1: 0.470213  v_AUC: 0.566207
+epoch 42    running time 10274 seconds
+
+Early stop model F1: 0.472111
+testing Prec: 0.1881604363140552
+testing Recall: 0.48055019515096997
+testing F1: 0.2704324714931351
+testing AUC: 0.5393705715609155
+overall running time 10278 seconds
+2019-02-22 09:03:05.380690: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-02-22 09:03:06.924532: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-02-22 09:03:07.019743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0e.0
+totalMemory: 22.38GiB freeMemory: 22.21GiB
+2019-02-22 09:03:07.019833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+user_feat_size is 14, in 87.950000 seconds
+loading data in 109.990000 seconds
+train/valid/test size: 2326847/258539/438949
+poi_feat_size 	3
+dim 	64
+action_feat_size 	2
+cuda_devices 	4
+epsilon 	1e-06
+dropout 	0.4
+fnn_hidden 	16
+item_size 	295795
+batch_size 	128
+patience 	5
+warmup_steps 	4000
+reg_weight 	0.03
+user_feat_size 	14
+l2_weight 	1e-05
+max_steps 	100000
+dir 	../beijing/
+epoch 1    loss: 0.981550
+epoch 1    t_Prec: 0.187385  t_Recall: 0.488631  t_F1: 0.270887  t_AUC: 0.542358
+epoch 1    v_Prec: 0.198828  v_Recall: 0.481906  v_F1: 0.281509  v_AUC: 0.542436
+epoch 1    running time 355 seconds
+
+epoch 2    loss: 0.593227
+epoch 2    t_Prec: 0.224107  t_Recall: 0.473242  t_F1: 0.304171  t_AUC: 0.549929
+epoch 2    v_Prec: 0.244881  v_Recall: 0.451960  v_F1: 0.317652  v_AUC: 0.545271
+epoch 2    running time 607 seconds
+
+epoch 3    loss: 0.458761
+epoch 3    t_Prec: 0.254430  t_Recall: 0.464308  t_F1: 0.328726  t_AUC: 0.552577
+epoch 3    v_Prec: 0.270938  v_Recall: 0.466119  v_F1: 0.342685  v_AUC: 0.556991
+epoch 3    running time 859 seconds
+
+epoch 4    loss: 0.389238
+epoch 4    t_Prec: 0.277887  t_Recall: 0.456665  t_F1: 0.345520  t_AUC: 0.551553
+epoch 4    v_Prec: 0.272288  v_Recall: 0.453465  v_F1: 0.340262  v_AUC: 0.546340
+epoch 4    running time 1111 seconds
+
+epoch 5    loss: 0.345971
+epoch 5    t_Prec: 0.302829  t_Recall: 0.456873  t_F1: 0.364233  t_AUC: 0.555743
+epoch 5    v_Prec: 0.306983  v_Recall: 0.430499  v_F1: 0.358398  v_AUC: 0.545450
+epoch 5    running time 1362 seconds
+
+epoch 6    loss: 0.316703
+epoch 6    t_Prec: 0.321692  t_Recall: 0.447301  t_F1: 0.374238  t_AUC: 0.551487
+epoch 6    v_Prec: 0.346370  v_Recall: 0.439996  v_F1: 0.387609  v_AUC: 0.559535
+epoch 6    running time 1611 seconds
+
+epoch 7    loss: 0.295325
+epoch 7    t_Prec: 0.344736  t_Recall: 0.449165  t_F1: 0.390082  t_AUC: 0.554144
+epoch 7    v_Prec: 0.335165  v_Recall: 0.431930  v_F1: 0.377444  v_AUC: 0.540471
+epoch 7    running time 1862 seconds
+
+epoch 8    loss: 0.279170
+epoch 8    t_Prec: 0.356023  t_Recall: 0.448098  t_F1: 0.396789  t_AUC: 0.553096
+epoch 8    v_Prec: 0.313082  v_Recall: 0.457880  v_F1: 0.371883  v_AUC: 0.552804
+epoch 8    running time 2114 seconds
+
+epoch 9    loss: 0.266668
+epoch 9    t_Prec: 0.375866  t_Recall: 0.445520  t_F1: 0.407740  t_AUC: 0.555588
+epoch 9    v_Prec: 0.383970  v_Recall: 0.433829  v_F1: 0.407380  v_AUC: 0.556216
+epoch 9    running time 2364 seconds
+
+epoch 10    loss: 0.256316
+epoch 10    t_Prec: 0.387030  t_Recall: 0.445679  t_F1: 0.414289  t_AUC: 0.553658
+epoch 10    v_Prec: 0.396679  v_Recall: 0.441427  v_F1: 0.417859  v_AUC: 0.559437
+epoch 10    running time 2614 seconds
+
+epoch 11    loss: 0.247722
+epoch 11    t_Prec: 0.406142  t_Recall: 0.447219  t_F1: 0.425692  t_AUC: 0.559670
+epoch 11    v_Prec: 0.385004  v_Recall: 0.444190  v_F1: 0.412484  v_AUC: 0.557138
+epoch 11    running time 2865 seconds
+
+epoch 12    loss: 0.240723
+epoch 12    t_Prec: 0.417608  t_Recall: 0.447241  t_F1: 0.431917  t_AUC: 0.557367
+epoch 12    v_Prec: 0.406496  v_Recall: 0.426651  v_F1: 0.416330  v_AUC: 0.548800
+epoch 12    running time 3114 seconds
+
+epoch 13    loss: 0.234599
+epoch 13    t_Prec: 0.422013  t_Recall: 0.450941  t_F1: 0.435998  t_AUC: 0.558436
+epoch 13    v_Prec: 0.392649  v_Recall: 0.436419  v_F1: 0.413379  v_AUC: 0.547883
+epoch 13    running time 3364 seconds
+
+epoch 14    loss: 0.229335
+epoch 14    t_Prec: 0.426045  t_Recall: 0.443101  t_F1: 0.434406  t_AUC: 0.552500
+epoch 14    v_Prec: 0.428705  v_Recall: 0.428674  v_F1: 0.428689  v_AUC: 0.552552
+epoch 14    running time 3613 seconds
+
+epoch 15    loss: 0.224762
+epoch 15    t_Prec: 0.439160  t_Recall: 0.440428  t_F1: 0.439793  t_AUC: 0.552239
+epoch 15    v_Prec: 0.422440  v_Recall: 0.428797  v_F1: 0.425595  v_AUC: 0.547316
+epoch 15    running time 3859 seconds
+
+epoch 16    loss: 0.220792
+epoch 16    t_Prec: 0.451601  t_Recall: 0.445088  t_F1: 0.448321  t_AUC: 0.556424
+epoch 16    v_Prec: 0.443664  v_Recall: 0.434668  v_F1: 0.439120  v_AUC: 0.554836
+epoch 16    running time 4108 seconds
+
+epoch 17    loss: 0.217246
+epoch 17    t_Prec: 0.464427  t_Recall: 0.448640  t_F1: 0.456397  t_AUC: 0.559429
+epoch 17    v_Prec: 0.471239  v_Recall: 0.432670  v_F1: 0.451132  v_AUC: 0.560549
+epoch 17    running time 4357 seconds
+
+epoch 18    loss: 0.214210
+epoch 18    t_Prec: 0.467820  t_Recall: 0.447969  t_F1: 0.457679  t_AUC: 0.560652
+epoch 18    v_Prec: 0.442296  v_Recall: 0.438467  v_F1: 0.440373  v_AUC: 0.558428
+epoch 18    running time 4607 seconds
+
+epoch 19    loss: 0.211240
+epoch 19    t_Prec: 0.468412  t_Recall: 0.445985  t_F1: 0.456923  t_AUC: 0.556617
+epoch 19    v_Prec: 0.461014  v_Recall: 0.432004  v_F1: 0.446038  v_AUC: 0.554381
+epoch 19    running time 4854 seconds
+
+epoch 20    loss: 0.208655
+epoch 20    t_Prec: 0.480010  t_Recall: 0.446133  t_F1: 0.462452  t_AUC: 0.558228
+epoch 20    v_Prec: 0.455353  v_Recall: 0.436123  v_F1: 0.445531  v_AUC: 0.556778
+epoch 20    running time 5101 seconds
+
+epoch 21    loss: 0.206410
+epoch 21    t_Prec: 0.486747  t_Recall: 0.448930  t_F1: 0.467074  t_AUC: 0.560105
+epoch 21    v_Prec: 0.464888  v_Recall: 0.434545  v_F1: 0.449204  v_AUC: 0.552447
+epoch 21    running time 5349 seconds
+
+epoch 22    loss: 0.204249
+epoch 22    t_Prec: 0.490478  t_Recall: 0.448508  t_F1: 0.468555  t_AUC: 0.559187
+epoch 22    v_Prec: 0.484145  v_Recall: 0.440637  v_F1: 0.461368  v_AUC: 0.565222
+epoch 22    running time 5593 seconds
+
+epoch 23    loss: 0.202308
+epoch 23    t_Prec: 0.497441  t_Recall: 0.448133  t_F1: 0.471502  t_AUC: 0.560557
+epoch 23    v_Prec: 0.482224  v_Recall: 0.430943  v_F1: 0.455143  v_AUC: 0.554509
+epoch 23    running time 5844 seconds
+
+epoch 24    loss: 0.200465
+epoch 24    t_Prec: 0.494261  t_Recall: 0.447271  t_F1: 0.469594  t_AUC: 0.557897
+epoch 24    v_Prec: 0.467017  v_Recall: 0.440267  v_F1: 0.453248  v_AUC: 0.554762
+epoch 24    running time 6088 seconds
+
+epoch 25    loss: 0.198724
+epoch 25    t_Prec: 0.503360  t_Recall: 0.447854  t_F1: 0.473988  t_AUC: 0.559354
+epoch 25    v_Prec: 0.480467  v_Recall: 0.434150  v_F1: 0.456136  v_AUC: 0.555678
+epoch 25    running time 6340 seconds
+
+epoch 26    loss: 0.197289
+epoch 26    t_Prec: 0.508409  t_Recall: 0.448005  t_F1: 0.476299  t_AUC: 0.562035
+epoch 26    v_Prec: 0.493528  v_Recall: 0.431683  v_F1: 0.460538  v_AUC: 0.558676
+epoch 26    running time 6594 seconds
+
+epoch 27    loss: 0.195831
+epoch 27    t_Prec: 0.515911  t_Recall: 0.447301  t_F1: 0.479163  t_AUC: 0.560426
+epoch 27    v_Prec: 0.457418  v_Recall: 0.434174  v_F1: 0.445493  v_AUC: 0.549010
+epoch 27    running time 6843 seconds
+
+Early stop model F1: 0.461368
+testing Prec: 0.20244822848474675
+testing Recall: 0.47248298776860465
+testing F1: 0.2834461988405898
+testing AUC: 0.5564188499633684
+overall running time 6847 seconds
+2019-02-22 10:57:15.519411: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2019-02-22 10:57:16.578175: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:892] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2019-02-22 10:57:16.681089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla P40 major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:00:0e.0
+totalMemory: 22.38GiB freeMemory: 21.23GiB
+2019-02-22 10:57:16.681148: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla P40, pci bus id: 0000:00:0e.0, compute capability: 6.1)
+user_feat_size is 14, in 88.930000 seconds
+loading data in 110.960000 seconds
+train/valid/test size: 2326847/258539/438949
+poi_feat_size 	3
+dim 	64
+action_feat_size 	2
+cuda_devices 	4
+epsilon 	1e-06
+dropout 	0.4
+fnn_hidden 	16
+item_size 	295795
+batch_size 	128
+patience 	5
+warmup_steps 	4000
+reg_weight 	0.03
+user_feat_size 	14
+l2_weight 	1e-05
+max_steps 	100000
+dir 	../beijing/
+epoch 1    loss: 0.981186
+epoch 1    t_Prec: 0.188788  t_Recall: 0.498704  t_F1: 0.273892  t_AUC: 0.547449
+epoch 1    v_Prec: 0.203394  v_Recall: 0.498454  v_F1: 0.288902  v_AUC: 0.553450
+epoch 1    running time 364 seconds
+
+epoch 2    loss: 0.593458
+epoch 2    t_Prec: 0.229607  t_Recall: 0.486711  t_F1: 0.312018  t_AUC: 0.560210
+epoch 2    v_Prec: 0.237783  v_Recall: 0.498430  v_F1: 0.321967  v_AUC: 0.569770
+epoch 2    running time 612 seconds
+
+epoch 3    loss: 0.458847
+epoch 3    t_Prec: 0.252501  t_Recall: 0.475508  t_F1: 0.329849  t_AUC: 0.557241
+epoch 3    v_Prec: 0.251864  v_Recall: 0.465846  v_F1: 0.326956  v_AUC: 0.549899
+epoch 3    running time 859 seconds
+
+epoch 4    loss: 0.388983
+epoch 4    t_Prec: 0.276154  t_Recall: 0.467516  t_F1: 0.347214  t_AUC: 0.557577
+epoch 4    v_Prec: 0.287235  v_Recall: 0.470164  v_F1: 0.356608  v_AUC: 0.566284
+epoch 4    running time 1108 seconds
+
+epoch 5    loss: 0.346029
+epoch 5    t_Prec: 0.303734  t_Recall: 0.467461  t_F1: 0.368217  t_AUC: 0.562961
+epoch 5    v_Prec: 0.320921  v_Recall: 0.455688  v_F1: 0.376611  v_AUC: 0.558718
+epoch 5    running time 1355 seconds
+
+epoch 6    loss: 0.316692
+epoch 6    t_Prec: 0.320200  t_Recall: 0.465399  t_F1: 0.379381  t_AUC: 0.560782
+epoch 6    v_Prec: 0.353689  v_Recall: 0.443100  v_F1: 0.393378  v_AUC: 0.556929
+epoch 6    running time 1603 seconds
+
+epoch 7    loss: 0.295369
+epoch 7    t_Prec: 0.332561  t_Recall: 0.458568  t_F1: 0.385530  t_AUC: 0.557532
+epoch 7    v_Prec: 0.350105  v_Recall: 0.451075  v_F1: 0.394227  v_AUC: 0.559766
+epoch 7    running time 1850 seconds
+
+epoch 8    loss: 0.279316
+epoch 8    t_Prec: 0.348783  t_Recall: 0.463562  t_F1: 0.398064  t_AUC: 0.562666
+epoch 8    v_Prec: 0.343395  v_Recall: 0.461699  v_F1: 0.393855  v_AUC: 0.563388
+epoch 8    running time 2099 seconds
+
+epoch 9    loss: 0.266446
+epoch 9    t_Prec: 0.364508  t_Recall: 0.461038  t_F1: 0.407129  t_AUC: 0.562134
+epoch 9    v_Prec: 0.352092  v_Recall: 0.458534  v_F1: 0.398325  v_AUC: 0.565360
+epoch 9    running time 2345 seconds
+
+epoch 10    loss: 0.256253
+epoch 10    t_Prec: 0.381113  t_Recall: 0.456942  t_F1: 0.415597  t_AUC: 0.561589
+epoch 10    v_Prec: 0.380541  v_Recall: 0.452007  v_F1: 0.413207  v_AUC: 0.560183
+epoch 10    running time 2591 seconds
+
+epoch 11    loss: 0.247751
+epoch 11    t_Prec: 0.388053  t_Recall: 0.458650  t_F1: 0.420408  t_AUC: 0.560697
+epoch 11    v_Prec: 0.386071  v_Recall: 0.454019  v_F1: 0.417297  v_AUC: 0.565702
+epoch 11    running time 2841 seconds
+
+epoch 12    loss: 0.240564
+epoch 12    t_Prec: 0.398664  t_Recall: 0.454957  t_F1: 0.424954  t_AUC: 0.560060
+epoch 12    v_Prec: 0.391033  v_Recall: 0.444695  v_F1: 0.416141  v_AUC: 0.556934
+epoch 12    running time 3094 seconds
+
+epoch 13    loss: 0.234675
+epoch 13    t_Prec: 0.414366  t_Recall: 0.458147  t_F1: 0.435158  t_AUC: 0.563284
+epoch 13    v_Prec: 0.396825  v_Recall: 0.459392  v_F1: 0.425823  v_AUC: 0.566174
+epoch 13    running time 3344 seconds
+
+epoch 14    loss: 0.229353
+epoch 14    t_Prec: 0.419133  t_Recall: 0.459707  t_F1: 0.438483  t_AUC: 0.566197
+epoch 14    v_Prec: 0.399382  v_Recall: 0.453209  v_F1: 0.424596  v_AUC: 0.563382
+epoch 14    running time 3598 seconds
+
+epoch 15    loss: 0.224869
+epoch 15    t_Prec: 0.430588  t_Recall: 0.458730  t_F1: 0.444213  t_AUC: 0.567657
+epoch 15    v_Prec: 0.433691  v_Recall: 0.449578  v_F1: 0.441491  v_AUC: 0.571455
+epoch 15    running time 3848 seconds
+
+epoch 16    loss: 0.220656
+epoch 16    t_Prec: 0.444786  t_Recall: 0.457301  t_F1: 0.450957  t_AUC: 0.569341
+epoch 16    v_Prec: 0.446358  v_Recall: 0.445898  v_F1: 0.446127  v_AUC: 0.570587
+epoch 16    running time 4099 seconds
+
+epoch 17    loss: 0.217282
+epoch 17    t_Prec: 0.457520  t_Recall: 0.455978  t_F1: 0.456748  t_AUC: 0.571613
+epoch 17    v_Prec: 0.461424  v_Recall: 0.442732  v_F1: 0.451885  v_AUC: 0.572852
+epoch 17    running time 4349 seconds
+
+epoch 18    loss: 0.214158
+epoch 18    t_Prec: 0.469106  t_Recall: 0.460249  t_F1: 0.464636  t_AUC: 0.574603
+epoch 18    v_Prec: 0.461894  v_Recall: 0.448793  v_F1: 0.455249  v_AUC: 0.573825
+epoch 18    running time 4600 seconds
+
+epoch 19    loss: 0.211197
+epoch 19    t_Prec: 0.476691  t_Recall: 0.462201  t_F1: 0.469335  t_AUC: 0.573619
+epoch 19    v_Prec: 0.455512  v_Recall: 0.455344  v_F1: 0.455428  v_AUC: 0.571823
+epoch 19    running time 4852 seconds
+
+epoch 20    loss: 0.208584
+epoch 20    t_Prec: 0.474931  t_Recall: 0.460676  t_F1: 0.467695  t_AUC: 0.572027
+epoch 20    v_Prec: 0.473329  v_Recall: 0.443935  v_F1: 0.458161  v_AUC: 0.571594
+epoch 20    running time 5104 seconds
+
+epoch 21    loss: 0.206371
+epoch 21    t_Prec: 0.483867  t_Recall: 0.462410  t_F1: 0.472895  t_AUC: 0.572236
+epoch 21    v_Prec: 0.463360  v_Recall: 0.442634  v_F1: 0.452760  v_AUC: 0.562573
+epoch 21    running time 5354 seconds
+
+epoch 22    loss: 0.204282
+epoch 22    t_Prec: 0.487897  t_Recall: 0.459589  t_F1: 0.473320  t_AUC: 0.570598
+epoch 22    v_Prec: 0.461365  v_Recall: 0.456056  v_F1: 0.458695  v_AUC: 0.570700
+epoch 22    running time 5604 seconds
+
+epoch 23    loss: 0.202189
+epoch 23    t_Prec: 0.493968  t_Recall: 0.463568  t_F1: 0.478285  t_AUC: 0.570914
+epoch 23    v_Prec: 0.471083  v_Recall: 0.454682  v_F1: 0.462737  v_AUC: 0.569847
+epoch 23    running time 5855 seconds
+
+epoch 24    loss: 0.200515
+epoch 24    t_Prec: 0.505854  t_Recall: 0.462034  t_F1: 0.482952  t_AUC: 0.573215
+epoch 24    v_Prec: 0.485706  v_Recall: 0.455221  v_F1: 0.469970  v_AUC: 0.574327
+epoch 24    running time 6107 seconds
+
+epoch 25    loss: 0.198793
+epoch 25    t_Prec: 0.510219  t_Recall: 0.459926  t_F1: 0.483769  t_AUC: 0.573192
+epoch 25    v_Prec: 0.493404  v_Recall: 0.445971  v_F1: 0.468490  v_AUC: 0.568145
+epoch 25    running time 6359 seconds
+
+epoch 26    loss: 0.197332
+epoch 26    t_Prec: 0.506511  t_Recall: 0.461687  t_F1: 0.483061  t_AUC: 0.571475
+epoch 26    v_Prec: 0.477546  v_Recall: 0.456595  v_F1: 0.466836  v_AUC: 0.570043
+epoch 26    running time 6610 seconds
+
+epoch 27    loss: 0.195847
+epoch 27    t_Prec: 0.514478  t_Recall: 0.463368  t_F1: 0.487587  t_AUC: 0.574282
+epoch 27    v_Prec: 0.501905  v_Recall: 0.452424  v_F1: 0.475882  v_AUC: 0.577117
+epoch 27    running time 6859 seconds
+
+epoch 28    loss: 0.194552
+epoch 28    t_Prec: 0.519057  t_Recall: 0.462347  t_F1: 0.489063  t_AUC: 0.573283
+epoch 28    v_Prec: 0.488700  v_Recall: 0.452571  v_F1: 0.469942  v_AUC: 0.572754
+epoch 28    running time 7109 seconds
+
+epoch 29    loss: 0.193238
+epoch 29    t_Prec: 0.524733  t_Recall: 0.460118  t_F1: 0.490306  t_AUC: 0.573141
+epoch 29    v_Prec: 0.520115  v_Recall: 0.445701  v_F1: 0.480041  v_AUC: 0.575900
+epoch 29    running time 7361 seconds
+
+epoch 30    loss: 0.192148
+epoch 30    t_Prec: 0.527567  t_Recall: 0.462689  t_F1: 0.493003  t_AUC: 0.573596
+epoch 30    v_Prec: 0.511501  v_Recall: 0.448498  v_F1: 0.477932  v_AUC: 0.570371
+epoch 30    running time 7609 seconds
+
+epoch 31    loss: 0.191043
+epoch 31    t_Prec: 0.525638  t_Recall: 0.458029  t_F1: 0.489510  t_AUC: 0.568924
+epoch 31    v_Prec: 0.533091  v_Recall: 0.435985  v_F1: 0.479673  v_AUC: 0.566539
+epoch 31    running time 7855 seconds
+
+epoch 32    loss: 0.190043
+epoch 32    t_Prec: 0.530803  t_Recall: 0.457741  t_F1: 0.491572  t_AUC: 0.570725
+epoch 32    v_Prec: 0.500182  v_Recall: 0.437114  v_F1: 0.466526  v_AUC: 0.563862
+epoch 32    running time 8104 seconds
+
+epoch 33    loss: 0.189026
+epoch 33    t_Prec: 0.535391  t_Recall: 0.457577  t_F1: 0.493435  t_AUC: 0.569763
+epoch 33    v_Prec: 0.495318  v_Recall: 0.447738  v_F1: 0.470327  v_AUC: 0.568519
+epoch 33    running time 8353 seconds
+
+epoch 34    loss: 0.188009
+epoch 34    t_Prec: 0.538039  t_Recall: 0.456646  t_F1: 0.494012  t_AUC: 0.570178
+epoch 34    v_Prec: 0.528669  v_Recall: 0.431200  v_F1: 0.474986  v_AUC: 0.563719
+epoch 34    running time 8605 seconds
+
+Early stop model F1: 0.480041
+testing Prec: 0.19829093027772382
+testing Recall: 0.47404999927453173
+testing F1: 0.27961949428513966
+testing AUC: 0.5525434346025797
+overall running time 8609 seconds
